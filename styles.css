@@ -1,6 +1,23 @@
 * {
     margin: 0px;
     padding: 0px;
+
+    color: #332d38;
+}
+
+body {
+    background-color: #efe3ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    font-size: 72px;
+    margin: 32px;
+    font-weight: 900;
 }
 
 .container {
@@ -10,6 +27,12 @@
 
     display: flex;
     flex-direction: column;
+
+    background-color: #fbf7ff;
+    border-radius: 4px;
+    border-color: white;
+
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
 }
 
 .row {
@@ -18,7 +41,114 @@
 }
 
 .grid-box {
-    border: 1px solid black;
     width: 100%;
 }
 
+.draw-container {
+    display: flex;
+    gap: 5%;
+}
+
+.draw-controls {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 6% 0 ;
+}
+
+.btn {
+    background-color: #00000000;
+    border: 2px solid #ccb3ff;
+    border-radius: 6px;
+
+    height: 40px;
+    
+    font-size: 18px;
+
+    width: 70%;
+
+    transition: all 0.15s ease 0s;
+}
+
+.color-pair {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.small-btn {
+    width: 142px;
+}
+
+
+.dot {
+    height: 36px;
+    width: 36px;
+    background-color: #332d38;
+    border-radius: 50%;
+    display: inline-block;
+    flex-shrink: 0;
+    transition: all 0.15s ease 0s;
+}
+
+.dot:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.dot:active {
+    transform: scale(1.15);
+}
+
+
+.btn-purple:hover {
+    border-color: #a477ff;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+.btn-purple:active {
+    background-color: #a477ff46;
+}
+
+
+.selected {
+    border-color: #a477ff;
+    background-color: #a477ff2d;
+}
+
+.erase {
+    border: 2px solid #ffb3b3;
+}
+
+.erase:hover {
+    border-color: #ff7777;
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.erase:active {
+    background-color: #ff777746;
+}
+
+.erase-selected {
+    border-color: #ff7777;
+    background-color: #ff77772d;
+}
+
+#color-picker {
+    pointer-events: none;
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+    margin: 0 0 -50px 0;
+}
+
+.drawn {
+    opacity: 100%;
+}

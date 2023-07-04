@@ -6,14 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Etch-A-Sketch</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Nunito+Sans&family=Ubuntu&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-
         <script src="script.js" defer></script>
 
-        <div class="container">
-        </div>
+        <div class="header">Etch-a-Sketch</div>
 
+        <div class="draw-container">
+            <div class="draw-controls">
+                <input type="color" id="color-picker">
+                <div class="color-pair">
+                    <button id="paint-btn" class="btn btn-purple small-btn paint draw selected">Paint</button>
+                    <div class="dot">
+                    </div>
+                </div>
+                <button id="rainbow-btn" class="btn btn-purple paint draw">Rainbow</button>
+                <button id="darken-btn" class="btn btn-purple paint">Darken</button>
+                <button id="erase-btn" class="btn erase paint">Erase</button>
+            </div>
+            <div class="container"></div>
+        </div>
+        
     </body>
 </html>
