@@ -1,0 +1,23 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    height: 100%;
+}
+
+.grid-box {
+    border: 1px solid black;
+    width: 100%;
+}
