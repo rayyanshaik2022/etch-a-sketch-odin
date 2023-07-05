@@ -1,11 +1,13 @@
+## Live Demo Link
+[Click Here](https://rayyanshaik2022.github.io/etch-a-sketch-odin/)
+
+---
+
 ## Completion Date
 07-02-2023
 
 ## UI Inspiration
 Design inspired by: https://michalosman.github.io/etch-a-sketch/
-
-## Live Demo Link
-[Click Here](https://rayyanshaik2022.github.io/etch-a-sketch-odin/)
 
 ## Finishing Remarks & Thoughts
 
