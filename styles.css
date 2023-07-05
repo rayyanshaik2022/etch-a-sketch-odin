@@ -10,8 +10,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    font-family: 'Ubuntu', sans-serif;
+
+    font-family: "Ubuntu", sans-serif;
 }
 
 .header {
@@ -55,7 +55,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 6% 0 ;
+    padding: 6% 0;
 }
 
 .btn {
@@ -64,7 +64,7 @@ body {
     border-radius: 6px;
 
     height: 40px;
-    
+
     font-size: 18px;
 
     width: 70%;
@@ -82,7 +82,6 @@ body {
 .small-btn {
     width: 142px;
 }
-
 
 .dot {
     height: 36px;
@@ -103,18 +102,15 @@ body {
     transform: scale(1.15);
 }
 
-
 .btn-purple:hover {
     border-color: #a477ff;
     cursor: pointer;
     transform: scale(1.03);
 }
 
-
 .btn-purple:active {
     background-color: #a477ff46;
 }
-
 
 .selected {
     border-color: #a477ff;
@@ -151,4 +147,54 @@ body {
 
 .drawn {
     opacity: 100%;
+}
+
+.size-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px
+}
+
+.grid-size-text {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 180px;
+    height: 10px;
+    border-radius: 20px;
+    margin-left: 2px;
+    background: #fbf7ff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #a477ff;;
+    cursor: pointer;
+
+    border-radius: 100%;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #a477ff;;
+    cursor: pointer;
+    border-radius: 100%;
 }

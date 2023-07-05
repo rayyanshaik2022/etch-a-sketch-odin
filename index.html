@@ -21,18 +21,37 @@
 
         <div class="draw-container">
             <div class="draw-controls">
-                <input type="color" id="color-picker">
+                <input type="color" id="color-picker" />
                 <div class="color-pair">
-                    <button id="paint-btn" class="btn btn-purple small-btn paint draw selected">Paint</button>
-                    <div class="dot">
-                    </div>
+                    <button
+                        id="paint-btn"
+                        class="btn btn-purple small-btn paint draw selected"
+                    >
+                        Paint
+                    </button>
+                    <div class="dot"></div>
                 </div>
-                <button id="rainbow-btn" class="btn btn-purple paint draw">Rainbow</button>
-                <button id="darken-btn" class="btn btn-purple paint">Darken</button>
+                <button id="rainbow-btn" class="btn btn-purple paint draw">
+                    Rainbow
+                </button>
+                <button id="darken-btn" class="btn btn-purple paint">
+                    Darken
+                </button>
                 <button id="erase-btn" class="btn erase paint">Erase</button>
+                <div class="size-container">
+                    <label class="grid-size-text">20 x 20</label>
+                    <input
+                    type="range"
+                    min="1"
+                    max="40"
+                    value="20"
+                    class="slider"
+                    id="myRange"
+                    
+                />
+                </div>
             </div>
             <div class="container"></div>
         </div>
-        
     </body>
 </html>
